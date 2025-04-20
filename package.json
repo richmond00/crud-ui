@@ -8,7 +8,7 @@
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "lint": "eslint .",
-    "format": "prettier --write"
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css}\""
   },
   "keywords": [],
   "author": "",
