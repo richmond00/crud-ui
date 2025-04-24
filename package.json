@@ -2,7 +2,7 @@
   "name": "crud-ui",
   "version": "0.0.1",
   "description": "",
-  "type": "module",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development",
