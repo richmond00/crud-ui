@@ -1,8 +1,12 @@
 import React from 'react';
+import UserList from './components/UserList';
 
 const App = () => {
-  console.log('husky test ');
-  return <div>hello world</div>;
+  return (
+    <div>
+      <UserList />
+    </div>
+  );
 };
 
 export default App;
