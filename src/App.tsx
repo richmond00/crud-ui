@@ -4,6 +4,7 @@ import UserList from './components/UserList';
 const App = () => {
   return (
     <div>
+      <h1>User list</h1>
       <UserList />
     </div>
   );
