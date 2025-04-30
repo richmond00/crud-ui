@@ -10,4 +10,6 @@ test('page displays page title', () => {
 
   expect(title).toBeInTheDocument();
   expect(title).toHaveTextContent('User list');
+
+  // test
 });
