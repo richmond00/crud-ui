@@ -4,7 +4,7 @@ import UserList from './components/UserList';
 const App = () => {
   return (
     <div>
-      <h1>User list</h1>
+      <h1>User List</h1>
       <UserList />
     </div>
   );
