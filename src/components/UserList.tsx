@@ -13,7 +13,6 @@ const UserList = () => {
         <li key={user.id}>
           <div>name: {user.username}</div>
           <div>email: {user.email}</div>
-          <div>{user.dummy}</div>
         </li>
       ))}
     </ul>
