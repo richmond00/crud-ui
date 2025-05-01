@@ -9,5 +9,5 @@ test('page displays page title', () => {
   const title = screen.getByRole('heading', { level: 1 });
 
   expect(title).toBeInTheDocument();
-  expect(title).toHaveTextContent('User list');
+  expect(title).toHaveTextContent('User List');
 });
