@@ -7,8 +7,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export default {
   entry: './src/index.tsx',
   output: {
-    filename: 'bundle.[contenthash].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
+    filename: 'static/js/[name].[contenthash].js',
+    publicPath: '/',
     clean: true,
   },
   resolve: {
