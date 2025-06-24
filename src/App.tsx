@@ -1,10 +1,12 @@
 import React from 'react';
 import UserList from './components/UserList';
+import './App.css';
+import PageTitle from './components/PageTitle';
 
 const App = () => {
   return (
-    <div>
-      <h1>User List1</h1>
+    <div className="container">
+      <PageTitle />
       <UserList />
     </div>
   );
