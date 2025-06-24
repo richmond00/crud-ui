@@ -1,0 +1,18 @@
+#users {
+  border-collapse: collapse;
+}
+
+#users {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+
+#users td,
+#users th {
+  padding: 8px;
+}
+
+#users tr {
+  border-bottom: 1px solid #ddd;
+}
