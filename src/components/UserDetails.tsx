@@ -1,4 +1,5 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { useState } from 'react';
+import './UserDetails.css';
 
 const UserDetails = () => {
   const [details, setDetails] = useState({
@@ -19,36 +20,34 @@ const UserDetails = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={onSubmit}>
-        <div>
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={details.name}
-            onChange={onChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={details.email}
-            onChange={onChange}
-          />
-        </div>
-        <div>
-          <button type="submit">Update</button>
-          <button type="button" onClick={onDelete}>
-            Delete
-          </button>
-        </div>
-      </form>
-    </div>
+    <form onSubmit={onSubmit} className="details-container">
+      <div className="details-input">
+        <label htmlFor="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={details.name}
+          onChange={onChange}
+        />
+      </div>
+      <div className="details-input">
+        <label htmlFor="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={details.email}
+          onChange={onChange}
+        />
+      </div>
+      <div className="form-buttons">
+        <button type="submit">Update</button>
+        <button type="button" onClick={onDelete}>
+          Delete
+        </button>
+      </div>
+    </form>
   );
 };
 

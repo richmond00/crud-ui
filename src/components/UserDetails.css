@@ -1,0 +1,25 @@
+.details-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.details-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.details-input input {
+  width: 260px;
+  padding: 8px;
+}
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.form-buttons button {
+  font-size: 16px;
+  padding: 8px;
+}
