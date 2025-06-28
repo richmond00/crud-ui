@@ -25,7 +25,7 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Runt Tets
+      - name: Unit test
         run: npm run test -- --coverage
 
       - name: Build
