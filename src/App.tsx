@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import UserList from './components/UserList';
+import './App.css';
+import PageTitle from './components/PageTitle';
+import UserDetails from './components/UserDetails';
 
 const App = () => {
+  const [userId, setUserId] = useState('');
+
   return (
-    <div>
-      <h1>User List1</h1>
-      <UserList />
+    <div className="container">
+      <PageTitle />
+      <UserList setUserId={setUserId} />
+      <UserDetails userId={userId} setUserId={setUserId} />
     </div>
   );
 };

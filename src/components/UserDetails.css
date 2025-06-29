@@ -1,0 +1,35 @@
+.details-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+
+.details-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.details-input input {
+  width: 260px;
+  padding: 8px;
+}
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-top: 16px;
+}
+.form-buttons button {
+  font-size: 16px;
+  padding: 8px;
+}
+.close-button {
+  align-self: flex-end;
+}
+
+.close-button button {
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+}

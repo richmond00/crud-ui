@@ -13,6 +13,9 @@ const config: Config = {
     '!src/**/index.ts',
   ],
   coverageReporters: ['text', 'lcov', 'html'],
+  moduleNameMapper: {
+    '\\.(css|less|scss|sass)$': '<rootDir>/__mocks__/styleMock.js',
+  },
 };
 
 export default config;

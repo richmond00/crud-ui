@@ -9,7 +9,7 @@ export default [
   ...tseslint.configs.recommended,
   {
     files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
-    ignores: ['**/*.config.js'],
+    ignores: ['**/*.config.js', '__mocks__/styleMock.js'],
     plugins: {
       react: react,
       'react-hooks': reactHooks,
