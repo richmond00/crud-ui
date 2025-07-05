@@ -10,7 +10,7 @@ const UserList = (props: UserListProps) => {
   const { data, isLoading, error } = useUserData();
 
   if (isLoading) return <Loader />;
-  if (error) return <div>Error: {error.message}</div>;
+  if (error) return <Error message={error.message} />;
 
   const onClick = (id: string) => {
     props.setUserId(id);
