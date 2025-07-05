@@ -1,5 +1,6 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import { useUserData } from '../api/useUserData';
+import Loader from './Loader';
 import './UserList.css';
 
 interface UserListProps {
@@ -8,7 +9,7 @@ interface UserListProps {
 const UserList = (props: UserListProps) => {
   const { data, isLoading, error } = useUserData();
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <Loader />;
   if (error) return <div>Error: {error.message}</div>;
 
   const onClick = (id: string) => {
