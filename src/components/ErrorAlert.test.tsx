@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import Error from './Error';
+import ErrorAlert from './ErrorAlert';
 
-test('Error displays alert message', () => {
-  const message = 'Network Error';
-  render(<Error message={message} />);
+test('ErrorAlert displays alert message', () => {
+  const message = 'Network ErrorAlert';
+  render(<ErrorAlert message={message} />);
   const el = screen.getByRole('alert');
   expect(el).toBeInTheDocument();
   expect(el).toHaveTextContent(message);

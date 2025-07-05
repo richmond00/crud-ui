@@ -4,8 +4,8 @@ interface ErrorProps {
   message: string;
 }
 
-const Error = (props: ErrorProps) => {
+const ErrorAlert = (props: ErrorProps) => {
   return <div role="alert">Something went wrong: {props.message}</div>;
 };
 
-export default Error;
+export default ErrorAlert;
