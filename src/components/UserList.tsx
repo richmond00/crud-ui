@@ -1,6 +1,8 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import { useUserData } from '../api/useUserData';
+import Loader from './Loader';
 import './UserList.css';
+import ErrorAlert from './ErrorAlert';
 
 interface UserListProps {
   setUserId: Dispatch<SetStateAction<string>>;
@@ -8,8 +10,8 @@ interface UserListProps {
 const UserList = (props: UserListProps) => {
   const { data, isLoading, error } = useUserData();
 
-  if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
+  if (isLoading) return <Loader />;
+  if (error) return <ErrorAlert message={error.message} />;
 
   const onClick = (id: string) => {
     props.setUserId(id);
